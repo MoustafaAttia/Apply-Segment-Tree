@@ -81,17 +81,11 @@ vector<STtype> constructST(vector<STtype> arr, int n)
 {
 	
 	int x = (int)(ceil(log2(n)));
-
-	
 	int max_size = 2 * (int)pow(2, x) - 1;
-
-	
 	vector<STtype> segmentTree(max_size);
 
-	
 	constructSTUtil(arr, 0, n - 1, segmentTree, 0);
 
-	
 	return segmentTree;
 }
 
