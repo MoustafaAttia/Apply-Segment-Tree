@@ -1,0 +1,1 @@
+# Apply Segment Tree
